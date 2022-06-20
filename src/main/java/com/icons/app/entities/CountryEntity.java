@@ -1,6 +1,8 @@
 package com.icons.app.entities;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -38,11 +40,11 @@ public class CountryEntity {
 	private ContinentEntity continent;
 	@Column(name = "continent_id", nullable = false)
 	private Long continentId;
-	@ManyToMany(cascade = { 
+	@ManyToMany(cascade = {
 			CascadeType.PERSIST,
 			CascadeType.MERGE })
 	@JoinTable(
-			name = "icons_country", 
+			name = "icon_country",
 			joinColumns = @JoinColumn(name = "country_id"),
 			inverseJoinColumns = @JoinColumn(name = "icon_id"))
 	private Set<IconEntity> icons = new HashSet<>();

@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+src/main/java/com/icons/app/entities/IconCountry.java
+src/main/java/com/icons/app/dto/IconCountryDTO.java
+src/main/java/com/icons/app/repository/IconCountryRepository.java

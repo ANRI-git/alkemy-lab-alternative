@@ -1,2 +1,10 @@
-package com.icons.app.repository;public class CountryRepository {
+package com.icons.app.repository;
+
+import com.icons.app.entities.CountryEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CountryRepository extends JpaRepository<CountryEntity, Long> {
+
 }

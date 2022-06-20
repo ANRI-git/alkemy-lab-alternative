@@ -1,2 +1,12 @@
-package com.icons.app.dto;public class ContinentDTO {
+package com.icons.app.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ContinentDTO {
+    private Long id;
+    private String image;
+    private String denomination;
 }

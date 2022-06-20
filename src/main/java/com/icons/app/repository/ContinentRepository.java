@@ -1,2 +1,10 @@
-package com.icons.app.repository;public class ContinentRepository {
+package com.icons.app.repository;
+
+import com.icons.app.entities.ContinentEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ContinentRepository extends JpaRepository<ContinentEntity, Long> {
+
 }
